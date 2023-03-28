@@ -9,6 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 // import modal from './modal'
 import nav123 from './nav'
 import pag from './components/pagination'
+import acc from './components/accordian'
 
 
 const extra = (
@@ -64,7 +65,14 @@ function App() {
         <div>
         </div>
       </header>
-
+      <div className='accordian' style={{ 
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+}}>
+      <Card
+          meta={acc}></Card>
+      </div>
 
       <div className='footer'>
       <Card
@@ -74,6 +82,8 @@ function App() {
           description={CardRow1}></Card> */}
 
       </div>
+
+   
 
     </div>
   );
