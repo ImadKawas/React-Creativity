@@ -10,6 +10,8 @@ import Nav from 'react-bootstrap/Nav';
 import nav123 from './nav'
 import pag from './components/pagination'
 import acc from './components/accordian'
+import form from './components/form'
+// import Button from '@mui/material/Button';
 
 
 const extra = (
@@ -30,48 +32,45 @@ function App() {
       <Card
           meta={nav123}></Card>
          
-        {/* <Card
-          description={CardRow1}></Card> */}
+       
       </div>
 
-
-      <header className="App-header">
-      <Nav
-      activeKey="/home"
-      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-    >
-      <Nav.Item>
-        <Nav.Link href="/home">Active</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-1">Link</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-2">Link</Nav.Link>
-      </Nav.Item>
-     
-    </Nav>
-        <Header size='huge'>React Creativity</Header>
-        <Card
-          image={arsa}
-          header='Elliot Baker'
-          meta={'Friend'}
-          description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-          extra={extra}
-
-        />
-
-        
-        <div>
-        </div>
-      </header>
+      <div className='App-header'>
+  <div className='card-container'>
+    <Card
+      image={arsa}
+      header='Elliot Baker'
+      meta={'Friend'}
+      description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+      extra={extra}
+    />
+    <Card
+      image={arsa}
+      header='John Doe'
+      meta={'Colleague'}
+      description='John is a software developer who loves coding and playing video games in his free time.'
+      extra={extra}
+    />
+     <Card
+      image={arsa}
+      header='John Doe'
+      meta={'Colleague'}
+      description='John is a software developer who loves coding and playing video games in his free time.'
+      extra={extra}
+    />
+    
+  </div>
+</div>
       <div className='accordian' style={{ 
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
 }}>
-      <Card
-          meta={acc}></Card>
+
+
+<Card
+          meta={form}></Card>
+          
       </div>
 
       <div className='footer'>
