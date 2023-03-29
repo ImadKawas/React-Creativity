@@ -2,12 +2,16 @@
   text-align: center;
 }
 
+* {
+  box-sizing: border-box !important;
+}
+
 
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  display: flex ;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,9 +27,11 @@
 
 
 .nav22 {
+  background-color: #282c34;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .footer{
@@ -54,21 +60,41 @@
 
 .ui.card, .ui.cards>.card {
   max-width: 100% !important;
-  /* position: relative; */
-  /* display: flex; */
+
   flex-direction: column !important;
-  width: 324px !important;
+  width: 420px !important;
   min-height: -17px !important; 
   background: #fff !important;
-  padding: 6px 31px 35px !important;
-  border: none;
-  border-radius: .28571429rem;
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-  /* transition: box-shadow .1s ease,transform .1s ease; */
+  /* padding: 6px 31px 35px !important; */
+  border: 0px solid black !important;
+ 
   z-index: '';
 }
 
 .ui.card>.content, .ui.cards>.card>.content {
   
   line-height: normal !important;
+}
+
+/* Default height for small devices */
+#intro-example {
+  height: 400px;
+  width: 800px;
+  background-color: #282c34;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+  #intro-example {
+    height: 600px;
+    width: 1323px;;
+    background-color: #282c34;
+  }
+}
+
+.Areatext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
 }
