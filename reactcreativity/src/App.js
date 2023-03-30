@@ -1,7 +1,7 @@
-import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Icon, Card, Header, Container } from 'semantic-ui-react';
+import { Icon, Card  } from 'semantic-ui-react';
 import arsa from './images/elliot.jpg';
 // import CardRow1 from './CardRow';
 import './App.css';
@@ -81,17 +81,13 @@ function App() {
       }}>
 
 
-        <Card
-          meta={form}></Card>
+       <h1>{textare123}</h1>
 
       </div>
 
       <div className='footer'>
-        <Card
-          meta={pag}></Card>
+     
 
-        {/* <Card
-          description={CardRow1}></Card> */}
 
       </div>
 
